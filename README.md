@@ -82,9 +82,6 @@ pip install -r requirements.txt
 jupyter notebook Diwali_Sales_Analysis.ipynb
 ```
 
-## 🙏 Credits
-Based on the project by [Rishabh Mishra](https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis).
-
 ## 👤 Author
 **<Your Name>**
-GitHub: [@<your-username>](https://github.com/<your-username>) | LinkedIn: <your-linkedin-link>
+GitHub: [@<your-username>]([https://github.com/<your-username>](https://github.com/bhargavrokad23-design)) | LinkedIn: <your-linkedin-link>
