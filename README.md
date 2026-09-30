@@ -83,5 +83,5 @@ jupyter notebook Diwali_Sales_Analysis.ipynb
 ```
 
 ## 👤 Author
-**<Your Name>**
-GitHub: [@<your-username>]([https://github.com/<your-username>](https://github.com/bhargavrokad23-design)) | LinkedIn: <your-linkedin-link>
+**Bhargav Rokad**
+GitHub: [bhargavrokad23](https://github.com/bhargavrokad23-design)
