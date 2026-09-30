@@ -8,12 +8,12 @@ The project finds out **which customers, states and product categories drive the
 **Gender • Age Group • State • Marital Status • Occupation • Product Category**
 
 ## 🛠️ Tools & Libraries
-**Python**
-**NumPy**
-**Pandas**
-**Matplotlib**
-**Seaborn**
-**Jupyter Notebook**
+* Python
+* NumPy
+* Pandas
+* Matplotlib
+* Seaborn
+* Jupyter Notebook
 
 ## 📂 Project Structure
 ```
