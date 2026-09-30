@@ -8,7 +8,12 @@ The project finds out **which customers, states and product categories drive the
 **Gender • Age Group • State • Marital Status • Occupation • Product Category**
 
 ## 🛠️ Tools & Libraries
-**Python 3**, **NumPy**, **Pandas**, **Matplotlib**, **Seaborn**, **Jupyter Notebook**
+**Python**
+**NumPy**
+**Pandas**
+**Matplotlib**
+**Seaborn**
+**Jupyter Notebook**
 
 ## 📂 Project Structure
 ```
@@ -20,11 +25,43 @@ Diwali-Sales-Analysis/
 └── README.md
 ```
 
-## 🔄 Workflow
-1. **Data Cleaning**: dropped blank columns (`Status`, `unnamed1`), **removed null values**, converted `Amount` to **integer**.
-2. **Descriptive Statistics**: summary of **Age, Orders and Amount** using `describe()`.
-3. **EDA & Visualisation**: **Gender, Age Group, State, Marital Status, Occupation, Product Category, Product ID**.
-4. **Extra Analysis**: **correlation heatmap**, **average spend per category**, **occupation × gender sales**, **age-group share of total sales**.
+## 🧾 What Was Done
+
+### 1. Data Loading & Understanding
+- **Imported** the required libraries: `numpy`, `pandas`, `matplotlib`, `seaborn`.
+- **Loaded the dataset** (`Diwali Sales Data.csv`) using `pd.read_csv()` with `unicode_escape` encoding.
+- **Explored the data** using `df.shape`, `df.head()`, `df.info()` and `df.columns` to understand the size, columns and data types.
+
+### 2. Data Cleaning
+- **Dropped unrelated/blank columns**: `Status` and `unnamed1`.
+- **Checked null values** using `pd.isnull(df).sum()` and **removed them** using `dropna()`.
+- **Changed data type** of the `Amount` column from float to **integer**.
+- **Renamed a column** (`Marital_Status` → `Shaadi`) to practise the `rename()` method.
+
+### 3. Descriptive Statistics
+- Used `describe()` on the full dataset and on **Age, Orders and Amount** to get **count, mean, std, min, max and quartiles**.
+
+### 4. Exploratory Data Analysis (EDA)
+Each column was analysed with **count plots** (number of buyers) and **bar plots** (total sales amount):
+
+| Column | What was analysed | Finding |
+|---|---|---|
+| **Gender** | Buyer count and total amount spent | **Women buy more and spend more** |
+| **Age Group** | Buyer count by gender, total amount | **26–35 age group** is the biggest |
+| **State** | Top 10 states by orders and by sales | **UP, Maharashtra, Karnataka** lead |
+| **Marital Status** | Buyer count, amount by gender | **Married women** spend the most |
+| **Occupation** | Buyer count and total amount | **IT, Healthcare, Aviation** lead |
+| **Product Category** | Count and top 10 by amount | **Food, Clothing, Electronics** lead |
+| **Product ID** | Top 10 most sold products | Best-selling individual products identified |
+
+### 5. Extra Analysis
+- **Correlation heatmap** of Age, Marital Status, Orders and Amount.
+- **Average spend** per product category (top 10).
+- **Sales by Occupation × Gender** (top 10 combinations).
+- **Share of total sales** by age group (pie chart).
+
+### 6. Conclusion
+- Combined all findings into **one customer profile** of the most likely Diwali buyer (see below).
 
 ## 📊 Key Insights
 - 👩 Most buyers are **women**, and their **total spending is higher than men's**.
@@ -44,3 +81,10 @@ cd Diwali-Sales-Analysis
 pip install -r requirements.txt
 jupyter notebook Diwali_Sales_Analysis.ipynb
 ```
+
+## 🙏 Credits
+Based on the project by [Rishabh Mishra](https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis).
+
+## 👤 Author
+**<Your Name>**
+GitHub: [@<your-username>](https://github.com/<your-username>) | LinkedIn: <your-linkedin-link>
